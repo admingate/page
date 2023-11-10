@@ -1,0 +1,21 @@
+{
+    "name": "admingate/page",
+    "description": "Page package",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "Admingate\\Page\\": "src"
+        }
+    },
+    "require": {
+        "admingate/admingate": "*@dev",
+        "admingate/revision": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Admingate\\Page\\Providers\\PageServiceProvider"
+            ]
+        }
+    }
+}
